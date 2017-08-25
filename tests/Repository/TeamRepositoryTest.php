@@ -44,14 +44,14 @@ class TeamRepositoryTest extends TestCase
                 "code": null,
                 "crestUrl": "http://upload.wikimedia.org/wikipedia/de/2/24/Logo_Feyenoord_Rotterdam.svg",
                 "name": "Feyenoord Rotterdam",
-                "shortName": "Feyenoord",
+                "shortName": null,
                 "squadMarketValue": null
             }'
         );
 
         $expected_competition = new Team(
             675,
-            'Feyenoord',
+            '',
             "Feyenoord Rotterdam",
             "http://upload.wikimedia.org/wikipedia/de/2/24/Logo_Feyenoord_Rotterdam.svg"
         );

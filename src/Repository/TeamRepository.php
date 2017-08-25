@@ -34,6 +34,6 @@ class TeamRepository
         preg_match_all('/\d+/', $entity['_links']['self']['href'], $numbers);
         $id = end($numbers[0]);
 
-        return new Team((int) $id, $entity['shortName'], $entity['name'], $entity['crestUrl'], $entity['code']);
+        return new Team((int) $id, $entity['shortName'] ?: '', $entity['name'], $entity['crestUrl'], $entity['code']);
     }
 }
