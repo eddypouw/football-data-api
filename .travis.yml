@@ -8,7 +8,8 @@ cache:
 
 php:
     - '7.1'
-    - nightly
+    - '7.2'
+    - '7.3'
 
 install:
     - composer update --prefer-stable --prefer-dist
